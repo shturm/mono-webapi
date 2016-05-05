@@ -1,11 +1,11 @@
-# MonoNLayer
-## C# project template for N-Layer type architecture
+# MonoWebApi
+## C# project template for DDD style/Onion type architecture
 
 ### Features
 
 * WebAPI
   * OWIN compatible
-  * AutoFac dependancy resolver
+  * AutoFac dependancy resolver (coming soon)
 * ASP.NET Identity
   * UserManager fully MySQL compatible
   * MySQL setup SQL included
