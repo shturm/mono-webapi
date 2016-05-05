@@ -41,7 +41,7 @@ curl localhost:8080/token -X POST -d 'grant_type=password&username=newuser@email
 }
 ```
 
-#### Access protected resource
+#### Who am I
 ```
 curl localhost:8080/api/accounts -X GET -H 'Content-type: application/json' -H 'Authorization: Bearer 8kdLng13bzQX0WqtsMGSIoFktdr5-LOnrV9apet0A4BslgLas7JYscQd_zVWwGNQBdAnioQBNkJELwOy7L94NKGiTnliM7jK6R5IgqX80DiaFXRqwfy3x4nS6DChRH81SqDPgRW9qifwYMyaIIDWhW3I8-g-C3WNCAtmsVVTXnXwaG4BLlyJECV-Cx5rBp4hrqtVnq19hwEjv8e3dA0_5_trQiFGqHn7evcS0obcevW6OL1U5SZLcJDEhYV5LuZKIFRjqHBN3FjSOYWBYxkgy1zMEZMfC819mEYbQv0m6yEGiCoXxV_Ii0IlLCLhUsmALuFNCbpruPtsItpWlanNqhyMaWS-kP8VO5eqHx9sYveexHsRDqzmwSdbJreOHh-Jy0Rx3vCIhub-DTNA3OJtF5SpNBTlJAZo7yCqXD0KkqVdt9U44B9KOQOzdCbHX87rl1_ewG_vjrbT0y3T1-qe2Nq4thybt-Po8DB1p61I5g'
 {
@@ -49,6 +49,14 @@ curl localhost:8080/api/accounts -X GET -H 'Content-type: application/json' -H '
   "userId": "c752f9a1-e345-4cd2-b00a-58823727fefa",
   "isAuthenticated": true,
   "authenticationType": "Bearer"
+}
+```
+
+#### Access protected resource
+```
+curl localhost:9000/api/secret -H 'Authorization: Bearer -gVL5t7nbH8L5imKQqt6JqWflxSBjof_cHbchabi90gx-mxiyOH66QIS8A43tmj2MZFe9eZlU5ugf0-c9wDRy9AAJUAWBZMn1_LxPhrD-BTg7x3yAlwyXS5a1DSrhB7HD3xAbMkbSIu7Z18oIbppifOxNXnoAjjwyqikqxqPfi1svOkDmDKAGa7Bz_4PhYqxUnUiqMUn5Gmzh4B8dT_cCGeqkCRkpT2Bs9mYPgfDRR5zL3nu6wOthQB1cnzGp3g2hxnAnibz3Kf9pkOY7OHMlQsNAmT5pk1vuk7-tgnpl3FxDLJCxXg7x8y151PHmu3UQD3lBaeR65BUP-5W5El4g'
+{
+  "message": "Authorization has been denied for this request."
 }
 ```
 
