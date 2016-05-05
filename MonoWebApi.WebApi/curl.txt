@@ -1,0 +1,3 @@
+curl localhost:9000/api/accounts -X GET -H 'Content-type: application/json'
+curl localhost:9000/api/accounts/register -X POST -d '{"email":"newuser@email.com", "password": "123456"}' -H 'Content-type: application/json'
+curl localhost:9000/token -X POST -d 'grant_type=password&username=newuser@email.com&password=123456'

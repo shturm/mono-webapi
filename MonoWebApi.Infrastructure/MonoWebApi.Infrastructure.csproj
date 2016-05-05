@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA39CDB7-FD61-4C9C-822B-60C8D0EC83D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MonoWebApi.Infrastructure</RootNamespace>
+    <AssemblyName>MonoWebApi.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.8\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IdentityMySQL\UserTable.cs" />
+    <Compile Include="IdentityMySQL\UserStore.cs" />
+    <Compile Include="IdentityMySQL\UserRoleTable.cs" />
+    <Compile Include="IdentityMySQL\UserLoginsTable.cs" />
+    <Compile Include="IdentityMySQL\UserClaimsTable.cs" />
+    <Compile Include="IdentityMySQL\RoleTable.cs" />
+    <Compile Include="IdentityMySQL\RoleStore.cs" />
+    <Compile Include="IdentityMySQL\MySQLDatabase.cs" />
+    <Compile Include="IdentityMySQL\IdentityUser.cs" />
+    <Compile Include="IdentityMySQL\IdentityRole.cs" />
+    <Compile Include="IdentityMySQL\UserManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IdentityMySQL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IdentityMySQL\MySQLIdentity.sql" />
+    <None Include="packages.config" />
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
