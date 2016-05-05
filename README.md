@@ -50,4 +50,11 @@ curl localhost:8080/api/accounts -X GET -H 'Content-type: application/json' -H '
   "isAuthenticated": true,
   "authenticationType": "Bearer"
 }
-````
+```
+
+### Run
+
+* Run the `MonoWebApi.Infrastructure/IdentityMySQL/MySQLIdentity.sql` SQL on your MySQL database.
+* Update the connection string in `Web.config`
+* Download NuGet packages and compile the solution
+* Update `https://github.com/shturm/mono-webapi/blob/master/MonoWebApi.Infrastructure.Tests/UserManagerTests.cs#L18` to run tests to ensure the application can connect to the database
