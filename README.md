@@ -5,7 +5,7 @@
 
 * WebAPI
   * OWIN compatible
-  * AutoFac dependancy resolver (coming soon)
+  * AutoFac dependancy resolver
 * ASP.NET Identity
   * UserManager fully MySQL compatible
   * MySQL setup SQL included

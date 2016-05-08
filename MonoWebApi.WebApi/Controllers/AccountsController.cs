@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 
-namespace MonoWebApi.Infrastructure.WebApi
+namespace MonoWebApi.Infrastructure.WebApi.Controllers
 {
 	
 	using UserManager = MonoWebApi.Infrastructure.UserManager;

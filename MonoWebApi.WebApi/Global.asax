@@ -1,2 +1,2 @@
-﻿<%@ Application Inherits="MonoWebApi.WebApi.Global" %>
+﻿<%@ Application Inherits="MonoWebApi.Infrastructure.WebApi.Global" %>
 

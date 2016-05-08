@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web.Http;
 
-namespace MonoWebApi.Infrastructure.WebApi
+namespace MonoWebApi.Infrastructure.WebApi.Controllers
 {
 	public class SecretController : ApiController
 	{
