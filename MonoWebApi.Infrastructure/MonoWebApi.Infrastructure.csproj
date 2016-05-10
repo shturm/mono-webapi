@@ -36,6 +36,18 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Configuration" />
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -50,14 +62,25 @@
     <Compile Include="IdentityMySQL\IdentityUser.cs" />
     <Compile Include="IdentityMySQL\IdentityRole.cs" />
     <Compile Include="IdentityMySQL\UserManager.cs" />
+    <Compile Include="Services\MyInfrastructureService.cs" />
+    <Compile Include="AutofacInfrastructureConfiguration.cs" />
+    <Compile Include="MyEntityMapping.cs" />
+    <Compile Include="NHibernateConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="IdentityMySQL\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="IdentityMySQL\MySQLIdentity.sql" />
     <None Include="packages.config" />
     <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MonoWebApi.Domain\MonoWebApi.Domain.csproj">
+      <Project>{4C64FCF4-4535-4EEF-A259-4BEF7E3E5B7B}</Project>
+      <Name>MonoWebApi.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

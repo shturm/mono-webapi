@@ -36,10 +36,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\MyService.cs" />
     <Compile Include="Services\IMyService.cs" />
-    <Compile Include="AutofacConfiguration.cs" />
+    <Compile Include="AutofacDomainConfiguration.cs" />
+    <Compile Include="Infrastructure\IMyInfrastructureService.cs" />
+    <Compile Include="Entities\MyEntity.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Entities\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

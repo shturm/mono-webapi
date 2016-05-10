@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E116A62-7FF7-4578-AD35-7BDA42252612}</ProjectGuid>
+    <ProjectGuid>{C84B41D1-32C8-4A08-B776-FA21796C5304}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>MonoWebApi.Infrastructure.Tests</RootNamespace>
-    <AssemblyName>MonoWebApi.Infrastructure.Tests</AssemblyName>
+    <RootNamespace>MonoWebApi.Domain.Tests</RootNamespace>
+    <AssemblyName>MonoWebApi.Domain.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -31,36 +31,24 @@
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNet.Identity.Core">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Configuration" />
-    <Reference Include="Iesi.Collections">
-      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="FluentNHibernate">
-      <HintPath>..\packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
-    </Reference>
-    <Reference Include="NHibernate">
-      <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UserManagerTests.cs" />
-    <Compile Include="NHibernateConfigurationTests.cs" />
+    <Compile Include="AutofacDomainConfigurationTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MonoWebApi.Infrastructure\MonoWebApi.Infrastructure.csproj">
-      <Project>{EA39CDB7-FD61-4C9C-822B-60C8D0EC83D2}</Project>
-      <Name>MonoWebApi.Infrastructure</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MonoWebApi.Domain\MonoWebApi.Domain.csproj">
       <Project>{4C64FCF4-4535-4EEF-A259-4BEF7E3E5B7B}</Project>
       <Name>MonoWebApi.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonoWebApi.Infrastructure\MonoWebApi.Infrastructure.csproj">
+      <Project>{EA39CDB7-FD61-4C9C-822B-60C8D0EC83D2}</Project>
+      <Name>MonoWebApi.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
