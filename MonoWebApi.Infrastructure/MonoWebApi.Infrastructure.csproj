@@ -64,17 +64,25 @@
     <Compile Include="IdentityMySQL\UserManager.cs" />
     <Compile Include="Services\MyInfrastructureService.cs" />
     <Compile Include="AutofacInfrastructureConfiguration.cs" />
-    <Compile Include="MyEntityMapping.cs" />
-    <Compile Include="NHibernateConfiguration.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="DataAccess\NHibernateConfiguration.cs" />
+    <Compile Include="DataAccess\NHM2MTableNameConvention.cs" />
+    <Compile Include="DataAccess\Mapping\BaseEntityMapping.cs" />
+    <Compile Include="DataAccess\Mapping\IngredientMapping.cs" />
+    <Compile Include="DataAccess\Mapping\RecipeMapping.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="IdentityMySQL\" />
     <Folder Include="Services\" />
+    <Folder Include="DataAccess\" />
+    <Folder Include="DataAccess\Mapping\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="IdentityMySQL\MySQLIdentity.sql" />
     <None Include="packages.config" />
-    <None Include="app.config" />
+    <None Include="app.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MonoWebApi.Domain\MonoWebApi.Domain.csproj">

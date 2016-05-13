@@ -38,7 +38,10 @@
     <Compile Include="Services\IMyService.cs" />
     <Compile Include="AutofacDomainConfiguration.cs" />
     <Compile Include="Infrastructure\IMyInfrastructureService.cs" />
-    <Compile Include="Entities\MyEntity.cs" />
+    <Compile Include="Infrastructure\IRepository.cs" />
+    <Compile Include="Entities\Ingredient.cs" />
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\Recipe.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />

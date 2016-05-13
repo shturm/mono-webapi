@@ -44,10 +44,20 @@
     <Reference Include="NHibernate">
       <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
     </Reference>
+    <Reference Include="Autofac.Extras.Moq">
+      <HintPath>..\packages\Autofac.Extras.Moq.4.0.0\lib\net45\Autofac.Extras.Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="UserManagerTests.cs" />
-    <Compile Include="NHibernateConfigurationTests.cs" />
+    <Compile Include="FNHConfigurationTests.cs" />
+    <Compile Include="RepositoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
