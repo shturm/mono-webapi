@@ -10,6 +10,7 @@
   * UserManager fully MySQL compatible
   * MySQL setup SQL included
 * OAuth2 bearer token authentication
+* NHibernate and generic repository at DataAccess layer
 * Tests 
 
 ### Domain Driven Design Style architecture - Onion Architecture
