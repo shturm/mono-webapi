@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C1EC39B6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoWebApi.Infrastructure.Tests", "MonoWebApi.Infrastructure.Tests\MonoWebApi.Infrastructure.Tests.csproj", "{3E116A62-7FF7-4578-AD35-7BDA42252612}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoWebApi.Domain.Tests", "MonoWebApi.Domain.Tests\MonoWebApi.Domain.Tests.csproj", "{C84B41D1-32C8-4A08-B776-FA21796C5304}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,8 +35,13 @@ Global
 		{3E116A62-7FF7-4578-AD35-7BDA42252612}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E116A62-7FF7-4578-AD35-7BDA42252612}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E116A62-7FF7-4578-AD35-7BDA42252612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C84B41D1-32C8-4A08-B776-FA21796C5304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C84B41D1-32C8-4A08-B776-FA21796C5304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C84B41D1-32C8-4A08-B776-FA21796C5304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C84B41D1-32C8-4A08-B776-FA21796C5304}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3E116A62-7FF7-4578-AD35-7BDA42252612} = {C1EC39B6-0B3E-45E5-87AC-60FD68DCCF89}
+		{C84B41D1-32C8-4A08-B776-FA21796C5304} = {C1EC39B6-0B3E-45E5-87AC-60FD68DCCF89}
 	EndGlobalSection
 EndGlobal

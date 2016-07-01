@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4C64FCF4-4535-4EEF-A259-4BEF7E3E5B7B}</ProjectGuid>
+    <ProjectGuid>{C84B41D1-32C8-4A08-B776-FA21796C5304}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>MonoWebApi.Domain</RootNamespace>
-    <AssemblyName>MonoWebApi.Domain</AssemblyName>
+    <RootNamespace>MonoWebApi.Domain.Tests</RootNamespace>
+    <AssemblyName>MonoWebApi.Domain.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -28,23 +28,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="Autofac">
       <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\MyService.cs" />
-    <Compile Include="Services\IMyService.cs" />
-    <Compile Include="AutofacDomainConfiguration.cs" />
-    <Compile Include="Infrastructure\IMyInfrastructureService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-    <Folder Include="Infrastructure\" />
+    <Compile Include="AutofacDomainConfigurationTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MonoWebApi.Domain\MonoWebApi.Domain.csproj">
+      <Project>{4C64FCF4-4535-4EEF-A259-4BEF7E3E5B7B}</Project>
+      <Name>MonoWebApi.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonoWebApi.Infrastructure\MonoWebApi.Infrastructure.csproj">
+      <Project>{EA39CDB7-FD61-4C9C-822B-60C8D0EC83D2}</Project>
+      <Name>MonoWebApi.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

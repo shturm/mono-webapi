@@ -23,7 +23,7 @@ namespace MonoWebApi.Infrastructure.WebApi
 		public void Configure (IAppBuilder app)
 		{
 			ConfigureOAuth (app);
-			//ConfigureWebApi (app); // 
+			//ConfigureWebApi (app); // OWIN
 		}
 
 		void ConfigureOAuth(IAppBuilder app)
@@ -67,7 +67,8 @@ namespace MonoWebApi.Infrastructure.WebApi
 
 			var builder = new ContainerBuilder ();
 			builder.RegisterApiControllers (Assembly.GetExecutingAssembly ());
-			MonoWebApi.Domain.AutofacConfiguration.Configure (builder);
+			AutofacDomainConfiguration.Configure (builder);
+			AutofacInfrastructureConfiguration.Configure (builder);
 			var container = builder.Build ();
 
 			config.DependencyResolver = new AutofacWebApiDependencyResolver (container);

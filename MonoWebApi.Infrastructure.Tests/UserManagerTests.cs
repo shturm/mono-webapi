@@ -60,8 +60,6 @@ namespace MonoWebApi.Infrastructure.Tests
 				user = await sut.FindAsync ("nonexistentuser", "wrongpassword");
 			});
 			Assert.IsNull (user);
-
-
 		}
 	}
 }
