@@ -1,8 +1,5 @@
 ﻿using NUnit.Framework;
-<<<<<<< HEAD
-=======
 using System.Configuration;
->>>>>>> 2f5aefa604b2f1ab5bd13f7c9794fe3ce0938f8c
 using System;
 using MonoWebApi.Infrastructure;
 using Autofac;
