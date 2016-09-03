@@ -7,11 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "MonoWebAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "MonoWebApi.Domain\Domain.csproj", "{4C64FCF4-4535-4EEF-A259-4BEF7E3E5B7B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C1EC39B6-0B3E-45E5-87AC-60FD68DCCF89}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoWebApi.Infrastructure.Tests", "MonoWebApi.Infrastructure.Tests\MonoWebApi.Infrastructure.Tests.csproj", "{3E116A62-7FF7-4578-AD35-7BDA42252612}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoWebApi.Domain.Tests", "MonoWebApi.Domain.Tests\MonoWebApi.Domain.Tests.csproj", "{C84B41D1-32C8-4A08-B776-FA21796C5304}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "MonoWebApi.Tests\Tests.csproj", "{3E116A62-7FF7-4578-AD35-7BDA42252612}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

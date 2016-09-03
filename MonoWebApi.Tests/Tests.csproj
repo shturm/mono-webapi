@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3E116A62-7FF7-4578-AD35-7BDA42252612}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>MonoWebApi.Infrastructure.Tests</RootNamespace>
-    <AssemblyName>MonoWebApi.Infrastructure.Tests</AssemblyName>
+    <RootNamespace>MonoWebApi.Tests</RootNamespace>
+    <AssemblyName>MonoWebApi.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -58,19 +58,24 @@
     <Compile Include="UserManagerTests.cs" />
     <Compile Include="FNHConfigurationTests.cs" />
     <Compile Include="RepositoryTests.cs" />
+    <Compile Include="AutofacDomainConfigurationTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MonoWebApi.Infrastructure\MonoWebApi.Infrastructure.csproj">
+    <ProjectReference Include="..\MonoWebApi.Domain\Domain.csproj">
+      <Project>{4C64FCF4-4535-4EEF-A259-4BEF7E3E5B7B}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonoWebApi.Infrastructure\Infrastructure.csproj">
       <Project>{EA39CDB7-FD61-4C9C-822B-60C8D0EC83D2}</Project>
       <Name>Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MonoWebApi.Domain\MonoWebApi.Domain.csproj">
-      <Project>{4C64FCF4-4535-4EEF-A259-4BEF7E3E5B7B}</Project>
-      <Name>Domain</Name>
+    <ProjectReference Include="..\MonoWebApi.Infrastructure.WebApi\WebApi.csproj">
+      <Project>{9C9D381F-80CD-4260-A5D1-3C2EB2DAA460}</Project>
+      <Name>WebApi</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
