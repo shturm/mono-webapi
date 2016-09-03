@@ -17,7 +17,7 @@ namespace MonoWebApi.Infrastructure.Tests
 			ConfigurationManager.ConnectionStrings.Add (
 				new ConnectionStringSettings ("DefaultConnection", "Server=localhost;Database=koshiyam;Uid=uniuser;Pwd=unipass;")
 			);
-			var db = new MySQLDatabase ();
+			//var db = new MySQLDatabase ();
 			//db.Execute ("delete from Users", new Dictionary<string, object> ());
 		}
 

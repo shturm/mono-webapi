@@ -12,9 +12,16 @@ namespace MonoWebApi.Infrastructure.WebApi.Controllers
 		{
 			_myService = myService;
 		}
+
 		public IHttpActionResult Get()
 		{
 			return Ok (new { message = "Hello WebApi", serivceMessage= _myService.GetGreeting () });
+		}
+
+		[HttpGet]
+		public string Hello(string name)
+		{
+			return "Hello " + name;
 		}
 	}
 }

@@ -110,11 +110,11 @@
     <Folder Include="Commands\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MonoWebApi.Domain\MonoWebApi.Domain.csproj">
+    <ProjectReference Include="..\MonoWebApi.Domain\Domain.csproj">
       <Project>{4C64FCF4-4535-4EEF-A259-4BEF7E3E5B7B}</Project>
       <Name>Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MonoWebApi.Infrastructure\MonoWebApi.Infrastructure.csproj">
+    <ProjectReference Include="..\MonoWebApi.Infrastructure\Infrastructure.csproj">
       <Project>{EA39CDB7-FD61-4C9C-822B-60C8D0EC83D2}</Project>
       <Name>Infrastructure</Name>
     </ProjectReference>
